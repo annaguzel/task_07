@@ -13,7 +13,11 @@
                     <li>{{restaurant.opening_time}}</li>
                     <li>{{restaurant.closing_time}}</li>
                 </ul>
+
             </a>
+            <li>
+              <a href="{% url 'restaurant-delete' restaurant_id=restaurant.id %}">Delete</a>
+            </li>
         {% endfor %}
     </body>
 </html>
